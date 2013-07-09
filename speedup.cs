@@ -647,7 +647,6 @@ namespace speedup.mod
             //SetButtonContent
             if (info.target is CardListPopup && info.targetMethod.Equals("SetButtonContent"))
             {
-
                 if (!cardlists.ContainsKey((CardListPopup)info.target))
                 {
                     cardlists.Add((CardListPopup)info.target, new classdata());
@@ -670,9 +669,8 @@ namespace speedup.mod
             }
 
             //SetButtonEnabled
-            if (info.target is CardListPopup && info.targetMethod.Equals("SetButtonHighlighted"))
+            if (info.target is CardListPopup && info.targetMethod.Equals("SetButtonEnabled"))
             {
-
                 if (!cardlists.ContainsKey((CardListPopup)info.target))
                 {
                     cardlists.Add((CardListPopup)info.target, new classdata());
